@@ -6,7 +6,12 @@ require 'haml'
 require 'parse-ruby-client'
 
 get '/' do 
-    word = "YOU"
+    @word = "YOU"
     haml :index
+end
+
+post '/feeling' do
+  @feeling = params["feeling"]
+  haml :feeling
 end
 

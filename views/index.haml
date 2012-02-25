@@ -1,5 +1,14 @@
-@@ index
+
 %h1 
   Parse CSV
 
-%p = "This is the app! Hello world! {word}"
+%p== "This is the app! Hello world! #{@word}"
+
+%form{:action => "/feeling", :method => "post"}
+  %legend
+    A simple question
+  %p
+    %label{:for => ""} How are you feeling today?
+    %input{:type => "textbox", :name => "feeling", :id => "feeling"}
+  %p
+    %input{:type => "submit", :value => "Submit!"}
