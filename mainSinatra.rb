@@ -1,6 +1,6 @@
 
 
-require 'ruby-gems'
+require 'rubygems'
 require 'sinatra'
 
 get '/' do
