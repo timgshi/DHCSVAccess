@@ -4,11 +4,13 @@
 
 %p== "This is the app! Hello world! #{@word}"
 
-%form{:action => "/feeling", :method => "post"}
+%form{:action => "/login", :method => "post"}
   %legend
     A simple question
   %p
-    %label{:for => ""} How are you feeling today?
-    %input{:type => "textbox", :name => "feeling", :id => "feeling"}
+    %label{:for => ""} Username?
+    %input{:type => "textbox", :name => "username", :id => "username"}
+    %label{:for => ""} Password?
+    %input{:type => "textbox", :name => "password", :id => "password"}
   %p
     %input{:type => "submit", :value => "Submit!"}
